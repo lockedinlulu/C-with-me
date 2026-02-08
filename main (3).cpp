@@ -1,10 +1,4 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
+//Lesson on Templates
 
 #include <iostream>
 using namespace std;
@@ -15,20 +9,16 @@ T applyPercentage(T amount, T percent, bool add){
 
 T change = amount * (percent / 100);
 
-
 if(add)
     return amount + change; // tip or tax
 else 
     return amount - change; // discount 
-
-
 }
 
 int main(){
     double bill = 100.0;
     
-    //1. tip
-    
+    //1. tip  
     double totalWithTip = applyPercentage(bill, 15.0, true);
     cout << "Total with tip: $" << totalWithTip << endl;
     
@@ -46,28 +36,7 @@ int main(){
     
     int roundedTotal = applyPercentage(intbill, 10, true);
     cout << "Rounded total: $" << roundedTotal << endl;
-    
-    
-    
+  
     return 0;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
